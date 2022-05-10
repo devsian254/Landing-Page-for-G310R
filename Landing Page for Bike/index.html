@@ -1,0 +1,50 @@
+<!--Hi Am Devsian254-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="/images/logo.png" class="logo" >
+            <a href="#" class="btn">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h2>The BMW</h2>
+            <h1>G 310 R</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            <h3>Choose your color</h3>
+            <div class="color-selector">
+                <div id="red"></div>
+                <div id="black"></div>
+                <div id="blue"></div>
+            </div>
+        </div>
+        </div>
+        <script>
+            let redBtn = document.getElementById("red");
+            let blackBtn = document.getElementById("black");
+            let blueBtn = document.getElementById("blue");
+            let bike = document.getElementById("bike");
+            
+            redBtn.onclick = function(){
+                bike.style.backgroundImage = "url(/images/BMW1.png)";
+
+            }
+            blackBtn.onclick = function(){
+                bike.style.backgroundImage = "url(/images/BMW3.png)";
+
+            }
+            blueBtn.onclick = function(){
+                bike.style.backgroundImage = "url(/images/BMW2.png)";
+
+            }
+        </script>
+    
+</body>
+</html>
